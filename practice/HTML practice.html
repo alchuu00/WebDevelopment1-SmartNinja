@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--we need opening and closing html tag (keywords that webpage uses to define what content web browser will display )-->
+
+<head>
+    <!--  info about website, not visible to users-->
+    <meta charset="UTF-8">
+    <meta name="description" content="free html tutorial for begginers">
+    <meta name="keywords" content="html, tutorial, beginner">
+    <meta name="author" content="Alchuu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <title>HTML practice</title>
+    <style> body {font-family: Comic sans ms;}</style>
+    <!--<link rel="stylesheet" href="HTML practice.css">-->
+</head>
+
+<body>
+<!--website that users see-->
+<div class="content">
+<h1>THIS IS MY WEBSITE</h1>
+<hr>
+<!--means horizontal rule to divide webpage by sections-->
+<h2 id="hyperlinks">hyperlinks</h2>
+<a id="googlelink" href="https://www.google.com/" target="_blank" title="this takes you to google webpage">
+    Take me to google!</a>
+<br>
+<!--means line break-->
+<a href="Fakebook/Fakebook with CSS.html" target="_blank" title="this takes you to Fakebook webpage">
+    Go to Fakebook!</a>
+<br>
+<a href="mailto: alja.cekada@gmail.com" target="_blank" title="this opens up email window">
+    Send email!</a>
+<!--target attribute specifies where link opens, title specifies text that appears when you hover with mouse over link-->
+<h2 id="imgashyper">image as hyperlink</h2>
+<a target="_blank" href="https://www.weve.co/hubfs/Resized-3_pexels-prateek-katyal-2740956.png">
+    <img src="https://i.pinimg.com/originals/24/76/45/2476453d2b5af11d40c3918c854a75e4.jpg" height="200"
+         alt="this is a picture of shrek" title="motivational quote">
+</a>
+<h2 id="audioplayer">audio player</h2>
+<audio controls autoplay loop>
+    <source src="">
+    <source src="">
+    this browser does not support this audio format
+</audio>
+<!--in source tag you put different sources for example mp.3 and wav
+in the end you writte a message that appears of none of the sources work-->
+<h2>video player</h2>
+<video controls autoplay loop>
+    <source src="">
+    <source src="">
+    this browser does not support this video format
+</video>
+<h2>paragraphs</h2>
+<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi cum deserunt esse illum ipsum laboriosam
+    molestias natus quam quo quos rem sit sunt tempora, totam unde velit? Maxime, minus?</p>
+<p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti doloremque earum iste laboriosam maxime temporibus
+    velit. Adipisci asperiores blanditiis dolor, illum neque rerum. Neque odio quidem quo? Debitis, dolorem, illum!</p>
+
+<h2>text formatting</h2>
+<p>this is normal text</p>
+<p>this is <b>bold text</b></p>
+<p>this is <i>italic</i> text</p>
+<p>this is <!--suppress XmlDeprecatedElement -->
+    <big>big</big> text</p>
+<p>this is <small>small</small> text</p>
+<p>this is <sub>subscript</sub> text</p>
+<p>this is <sup>superscript</sup> text</p>
+<p>this is
+    <ins>inserted</ins>
+    text
+</p>
+<p>this is
+    <del>deleted</del>
+    text
+</p>
+<p>this is
+    <mark>marked</mark>
+    text
+</p>
+
+<h2>lists</h2>
+<h3>unordered list</h3>
+<ul>
+    <li>eggs</li>
+    <li>ham</li>
+    <li>ornage juice</li>
+    <li>coffee</li>
+    <ul>
+        <li>with milk</li>
+        <li>without milk</li>
+        <li>with sugar</li>
+        <ul>
+            <li>white sugar</li>
+            <li>brown sugar</li>
+        </ul>
+    </ul>
+</ul>
+<h3>ordered list</h3>
+<ol type="I">
+    <!--you can choose how list items are marked-->
+    <li>wake up</li>
+    <li>meditate</li>
+    <li>stretch</li>
+    <li>breakfast</li>
+</ol>
+<h3>description list</h3>
+<!--used for describing terms and definitions-->
+<dl>
+    <dt>HTML</dt>
+    <dd>this adds structure to a webpage</dd>
+    <dt>CSS</dt>
+    <dd>this adds style to a webpage</dd>
+    <dt>JavaScript</dt>
+    <dd>this adds functionality to a webpage</dd>
+</dl>
+
+<h2>tables</h2>
+<table bgcolor="black">
+    <!--bgcolor changes background color of the table-->
+    <tr bgcolor="gray" align="center">
+        <th width="100">sunday</th>
+        <th width="100">monday</th>
+        <th width="100">tuesday</th>
+        <th width="100">wednesday</th>
+        <th width="100">thursday</th>
+        <th width="100">friday</th>
+        <th width="100">saturday</th>
+    </tr>
+    <tr bgcolor="lightgray" align="center">
+        <td>closed</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>9-5</td>
+        <td>closed</td>
+    </tr>
+</table>
+
+<h2>span & div</h2>
+<!--span adds markup to text or portion of a document-->
+<!--div defines a division of a document-->
+<div style="background-color: lightgray;">
+    <p>Lorem ipsum dolor sit amet, <span style="color: red;">consectetur adipisicing elit.</span> Accusantium adipisci
+        amet aperiam asperiores debitis, eaque est illo iure labore laborum maiores nesciunt nostrum quam quibusdam quis
+        quod recusandae reiciendis unde?</p>
+    <img id="image" src="https://i.pinimg.com/474x/d8/85/9b/d8859b53e3e8b3eb455acf6e4addb4c9.jpg" width="30%">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, aperiam at dignissimos dolorem eligendi,
+        expedita, hic illum laborum necessitatibus quas quis quod sapiente sunt veniam voluptas. Deleniti hic quod
+        saepe.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias asperiores aut cupiditate dolores eius
+        est, expedita ipsam itaque labore laborum modi mollitia, necessitatibus neque nisi, quam quasi sint tenetur?</p>
+</div>
+
+<h2>iframe</h2>
+<!--used to embed content from another source, used in ads and many hacking techniques-->
+<iframe src="/Fakebook/Fakebook with CSS.html/" width="500" height="250">
+</iframe>
+<br>
+<iframe src="https://www.bing.com/" width="500" height="250">
+</iframe>
+
+<h2>buttons</h2>
+<a href="https://www.google.com/" target="_blank" title="this takes you to google">
+    <button id="button" style="color: white; border-radius: 20%; border-width: 3px;"> Go to Google!
+    </button>
+</a>
+
+<h2>forms</h2>
+<form>
+    <div>
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname" placeholder="first name" required>
+    </div>
+    <br>
+    <div>
+        <label for="lname">last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="last name" required>
+    </div>
+    <br>
+    <div>
+        <label for="pass">password:</label>
+        <input type="password" id="pass" name="pass" placeholder="password" maxlength="12" required>
+    </div>
+    <br>
+    <div>
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" placeholder="johnny.sins@mail.org">
+    </div>
+    <br>
+    <div>
+        <label for="phone">phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="phone number">
+    </div>
+    <br>
+    <div>
+        <label for="birth date">birth date:</label>
+        <input type="date" id="birth date" name="birth date">
+    </div>
+    <br>
+    <div>
+        <label for="quantity">quantity:</label>
+        <input type="number" id="quantity" name="quantity" placeholder="quantity" min="0" max="99">
+    </div>
+    <br>
+    <div>
+        <label for="title">title:</label>
+
+        <label for="Mrs.">Mrs.</label>
+        <input type="radio" name="title" value="Mrs." id="Mrs.">
+
+        <label for="Mr.">Mr.</label>
+        <input type="radio" name="title" value="Mr." id="Mr.">
+
+        <label for="PhD.">PhD.</label>
+        <input type="radio" name="title" value="PhD." id="PhD.">
+    </div>
+
+    <br>
+    <div>
+        <label for="pay">payment:</label>
+        <select id="pay" name="pay">
+            <option value="payment" selected disabled>payment</option>
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="paypal">paypal</option>
+        </select>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="subscribe">subscribe</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="image">image</label>
+        <input type="image" id="image" name="image">
+    </div>
+    </div>
+
+    <div>
+        <input type="reset">
+    </div>
+    <br>
+    <div>
+        <input type="submit">
+    </div>
+</form>
+
+<h2>usage & progress bars</h2>
+<div>
+    <label for="disk_c">Disk usage C:</label>
+    <meter id="disk_c" value="8" min="0" max="10">2 out of 10</meter>
+    <br>
+    <label for="disk_d">Disk usage D:</label>
+    <meter id="disk_d" value="0.7">60%</meter>
+    <br>
+    <label for="progress">progress</label>
+    <progress id="progress" value="40" max="100"> 40%</progress>
+</div>
+
+</body>
+</html>

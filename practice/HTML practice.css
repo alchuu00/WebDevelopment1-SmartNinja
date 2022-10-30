@@ -1,0 +1,157 @@
+body {
+    background-image: url(https://avatarfiles.alphacoders.com/195/195029.jpg);
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: contain;
+}
+    /*IF WE WANT GRADIENT BACKGROUND
+    background: linear-gradient(to left, lightpink, lightyellow);
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  /*with max width and ,margin we align page content to center
+  in the HTML you have to put all body content in a box <div></div>*/
+  background-color: white;
+  padding: 30px;
+}
+
+h1 {
+    color: black;
+    text-shadow: 0px 0px 5px yellow, 0px -5px 5px red; /*x y spread colour, yoou can add multiple shadows*/
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+    font-family: helvetica;
+    font-style: italic;
+    text-decoration: /*underline dotted cyan*/;
+}
+
+#hyperlinks {
+    color: red;
+    background: linear-gradient(to bottom, skyblue, lightgreen);
+    background-repeat: no-repeat;
+}
+
+#imgashyper {
+    color: green;
+}
+
+#audioplayer {
+    color: brown;
+    animation: mycolorchange; /*here you type which animation to use*/
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: 1s;
+    animation-timing-function: ease; /*easein, easeout, linear*/
+}
+
+@keyframes myslide {
+    from{margin-left: 100%}
+    to{margin-left: 0;}
+}
+
+@keyframes myrotate {
+    100%{transform: rotateX(360deg);}
+}
+
+@keyframes myopacity {
+    50%{opacity: 0;}
+}
+
+@keyframes myscale {
+    50%{transform: scale(0.5, 0.5);}
+}
+
+@keyframes mycolorchange {
+    0%{color: red;}
+    25%{color: blue;}
+    50%{color: green;}
+    75%{color: orange;}
+}
+
+#p1 {
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 20px;
+    background: greenyellow;
+    padding: 10px;
+    margin-top; 50px;
+    margin-bottom: 20px;
+    /*if you type margin left and right auto, the element is centered in the middle horizontally*/
+    margin-left: auto;
+    margin-right: auto;
+    /*if we want to add same margin all around element margin: 50px;*/
+}
+
+#p2 {
+    border-top-style: dashed;
+    border-bottom-style: double;
+    border-left-style: groove;
+    border-right-style: ridge;
+    border-top-color: red;
+    border-bottom-color: blue;
+    border-left-color: green;
+    border-right-color: brown;
+    border-width: 10px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#image {
+    float: right;
+    position: relative; /*means that you can specify how much you want to move element with top_px; and left_px; */
+    /*if position is set to absolute; item displays on top of document and all document ignores that item*/
+}
+
+#googlelink:link { /*:link is a peseudo class - they specify special state of the element*/
+    color: lawngreen;
+}
+
+#googlelink:visited {
+    color: gray;
+}
+
+#googlelink:hover {
+    font-size: 30px;
+    color: red;
+}
+
+#googlelink:active {
+    color: yellow;
+}
+
+#button {
+    height: 50px;
+    background-color: green;
+}
+
+#button:hover {
+    background-color: pink;
+    font-size: 30px;
+}
+
+li:nth-child(1/*you can also put even or odd*/) {
+    background-color: brown;
+}
+
+/*.box {
+    transform: translateX(50px);
+    transform: translateY(50px);
+    transform: translate(50px, 50px);
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+    transform: rotate(180deg);
+    transform: scaleX(2);
+    transform: scaleY(2);
+    transform: scale(2, 2);
+    transform: skewX(45deg);
+    transform: skewY(45deg);
+    transform: skew(45deg, 45deg);
+}*/
+
